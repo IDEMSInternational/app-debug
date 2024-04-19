@@ -14,7 +14,7 @@ config.web.favicon_asset = "images/icons/favicon.svg";
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/app-debug-content.git",
-  content_tag_latest: "1.2.22",
+  content_tag_latest: "1.2.23",
 };
 
 config.app_config.ASSET_PACKS = {
@@ -25,7 +25,6 @@ config.app_config.ASSET_PACKS = {
 
 // set supabase config if decrypted values available
 // TODO - should supabase match general config and additional settings
-
 const supabaseConfig = loadEncryptedConfig("supabaseConfig.json");
 config.supabase = { ...supabaseConfig, enabled: supabaseConfig ? true : false  };
 
